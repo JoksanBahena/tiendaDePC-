@@ -42,25 +42,25 @@
             android:id="@+id/rb4gb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="4GB" />
+            android:text="4GB $540" />
 
         <RadioButton
             android:id="@+id/rb8gb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="8GB" />
+            android:text="8GB $650" />
 
         <RadioButton
             android:id="@+id/rb16gb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="16GB" />
+            android:text="16GB $700" />
 
         <RadioButton
             android:id="@+id/rb32gb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="32GB" />
+            android:text="32GB $899" />
     </RadioGroup>
 
     <TextView

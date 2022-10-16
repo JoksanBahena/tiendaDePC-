@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.184" />
 
     <TextView
         android:id="@+id/textView6"
@@ -77,9 +77,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Aceptar"
-        app:layout_constraintEnd_toEndOf="@+id/txtTarjeta"
-        app:layout_constraintStart_toStartOf="@+id/txtTarjeta"
-        app:layout_constraintTop_toBottomOf="@+id/txtTarjeta" />
+        app:layout_constraintEnd_toEndOf="@+id/txtTotal"
+        app:layout_constraintStart_toStartOf="@+id/txtTotal"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotal" />
 
     <TextView
         android:id="@+id/txtTarjeta"
@@ -89,4 +89,25 @@
         app:layout_constraintEnd_toEndOf="@+id/textView10"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Total:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtTarjeta"
+        app:layout_constraintStart_toStartOf="@+id/txtTarjeta"
+        app:layout_constraintTop_toBottomOf="@+id/txtTarjeta" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 </androidx.constraintlayout.widget.ConstraintLayout>

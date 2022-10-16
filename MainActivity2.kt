@@ -27,9 +27,18 @@ class MainActivity2 : AppCompatActivity() {
                 else -> "Sin seleccion"
             }
 
+            var precioRam = when(opcion) {
+                R.id.rb4gb -> "540"
+                R.id.rb8gb -> "650"
+                R.id.rb16gb -> "700"
+                R.id.rb32gb -> "899"
+                else -> "0"
+            }
+
             val intent = Intent(this@MainActivity2, MainActivity3::class.java)
 
             intent.putExtra("RAM", memoria)
+            intent.putExtra("precioRAM", precioRam)
 
             startActivity(intent)
         }

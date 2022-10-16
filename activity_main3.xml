@@ -41,25 +41,25 @@
             android:id="@+id/rb2600"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="R5 2600" />
+            android:text="R5 2600 $2999" />
 
         <RadioButton
             android:id="@+id/rb3600"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="R5 3600" />
+            android:text="R5 3600 $3350" />
 
         <RadioButton
             android:id="@+id/rb3600x"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="R5 3600X" />
+            android:text="R5 3600X $3899" />
 
         <RadioButton
             android:id="@+id/rb5600"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="R5 5600" />
+            android:text="R5 5600 $4700" />
     </RadioGroup>
 
     <TextView

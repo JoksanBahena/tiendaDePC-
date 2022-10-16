@@ -16,7 +16,9 @@ class MainActivity4 : AppCompatActivity() {
         setContentView(binding.root)
 
         var memoria = intent.getStringExtra("RAM")
+        var precioRam = intent.getStringExtra("precioRAM")
         var procesador = intent.getStringExtra("PROCESADOR")
+        var precioProcesador = intent.getStringExtra("precioPROCESADOR")
 
         binding.btnSiguiente4.setOnClickListener {
             val opcion = binding.rgTarjeta.checkedRadioButtonId
@@ -28,11 +30,22 @@ class MainActivity4 : AppCompatActivity() {
                 else -> "Sin seleccion"
             }
 
+            var precioTarjeta = when(opcion) {
+                R.id.rb1050 -> "3899"
+                R.id.rb1650 -> "4300"
+                R.id.rb2060 -> "5199"
+                R.id.rb2080 -> "6299"
+                else -> "0"
+            }
+
             val intent = Intent(this@MainActivity4, MainActivity5::class.java)
 
             intent.putExtra("TARJETA", tarjeta)
+            intent.putExtra("precioTARJETA", precioTarjeta)
             intent.putExtra("RAM", memoria)
+            intent.putExtra("precioRAM", precioRam)
             intent.putExtra("PROCESADOR", procesador)
+            intent.putExtra("precioPROCESADOR", precioProcesador)
 
             startActivity(intent)
         }

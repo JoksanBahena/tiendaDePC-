@@ -14,12 +14,18 @@ class MainActivity5 : AppCompatActivity() {
         setContentView(binding.root)
 
         var memoria = intent.getStringExtra("RAM")
+        var precioRam = intent.getStringExtra("precioRAM").toString().toInt()
         var procesador = intent.getStringExtra("PROCESADOR")
+        var precioProcesador = intent.getStringExtra("precioPROCESADOR").toString().toInt()
         var tarjeta = intent.getStringExtra("TARJETA")
+        var precioTarjeta = intent.getStringExtra("precioTARJETA").toString().toInt()
 
-        binding.txtRam.text = memoria
-        binding.txtProcesador.text = procesador
-        binding.txtTarjeta.text = tarjeta
+        var total = precioRam + precioProcesador + precioTarjeta
+
+        binding.txtRam.text = memoria + " $" + precioRam
+        binding.txtProcesador.text = procesador + " $" + precioProcesador
+        binding.txtTarjeta.text = tarjeta + " $" + precioTarjeta
+        binding.txtTotal.text = "$" + total.toString()
 
         binding.btnAceptar.setOnClickListener {
             val intent = Intent(this@MainActivity5, MainActivity::class.java)

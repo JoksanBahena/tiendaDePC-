@@ -53,24 +53,24 @@
             android:id="@+id/rb1050"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GTX 1050" />
+            android:text="GTX 1050 $3899" />
 
         <RadioButton
             android:id="@+id/rb1650"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GTX 1650" />
+            android:text="GTX 1650 $4300" />
 
         <RadioButton
             android:id="@+id/rb2060"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RTX 2060" />
+            android:text="RTX 2060 $5199" />
 
         <RadioButton
             android:id="@+id/rb2080"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RTX 2080" />
+            android:text="RTX 2080 $6299" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
